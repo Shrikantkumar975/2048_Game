@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 with AI Hints</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>2048</h1>
+    <div class="theme-buttons">
+        <button class="theme-btn" onclick="setTheme('wooden')">Wooden</button>
+        <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+        <button class="theme-btn" onclick="setTheme('jungle')">Jungle</button>
+    </div>
+
+    <div class="ai-controls">
+        <button class="hint-btn" onclick="showHint()"> Hint</button>
+        <button class="auto-play-btn" id="autoPlayBtn" onclick="toggleAutoPlay()"> Auto Play</button>
+    </div>
+    <div class="hint-display" id="hintDisplay"></div>
+
+    <hr>
+    <h2>Score: <span id="score">0</span> | High Score: <span id="high-score">0</span></h2>
+    <div id="board"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
